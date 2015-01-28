@@ -11,3 +11,41 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.name {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    overflow: hidden;
+    padding: 2em;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 13rem;
+    top: 2.7rem;
+    bottom: 3rem;
+    left: calc(50% - 6.5rem);
+    
+}
+
+.jesso {
+    float: left;
+}
+
+.leigh {
+    float: right;
+}
