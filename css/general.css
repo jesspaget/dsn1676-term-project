@@ -33,7 +33,7 @@ body {
     }
     
     100% {
-        transform: scale(1.2,1.2);
+        transform: scale(1.05,1.05);
     }
     
 }
@@ -48,10 +48,22 @@ body {
 
 .logo {
     position: absolute;
-    width: 12rem;
+    width: 13rem;
     top: 4.3rem;
     bottom: 3rem;
     left: calc(50% - 6.5rem);
+    animation: rotate 10s infinite alternate;
+}
+
+@keyframes rotate {
+        
+    0% {
+        transform: rotate(0deg)
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
     
 }
 
