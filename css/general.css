@@ -23,6 +23,19 @@ body {
     width: 100%;
     position: relative;
     padding: 3rem 0;
+    animation: scale 5s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+    
+    0% {
+        transform: scale(1,1);
+    }
+    
+    100% {
+        transform: scale(1.2,1.2);
+    }
+    
 }
 
 .name {
@@ -35,8 +48,8 @@ body {
 
 .logo {
     position: absolute;
-    width: 13rem;
-    top: 2.7rem;
+    width: 12rem;
+    top: 4.3rem;
     bottom: 3rem;
     left: calc(50% - 6.5rem);
     
@@ -44,8 +57,14 @@ body {
 
 .jesso {
     float: left;
+    font-size: 4rem;
+    font-family: 'Megrim', sans-serif;
+    text-transform: uppercase;
 }
 
 .leigh {
     float: right;
+    font-size: 4rem;
+    font-family: 'Megrim', sans-serif;
+    text-transform: uppercase;
 }
