@@ -15,10 +15,12 @@ html {
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .banner {
     background-image: url(../images/banner.jpg);
+    background-position: center center;
     background-size: cover;
     width: 100%;
     position: relative;
@@ -42,14 +44,15 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     overflow: hidden;
-    padding: 4em;
+    padding: 5em 0 1em;
     margin: 0;
+    line-height: 1;
 }
 
 .logo {
     position: absolute;
     width: 10rem;
-    top: 3rem;
+    top: 3.15rem;
     bottom: 3rem;
     left: calc(50% - 5rem);
     animation: rotate 10s infinite alternate;
@@ -70,15 +73,26 @@ body {
 .jesso {
     font-family: 'Megrim', sans-serif;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    transition: all 0.5s ease;
+}
+
+.name:hover .jesso {
+    color: white;
+    
 }
     
 .leigh {
     font-family: 'Megrim', sans-serif;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    transition: all 0.5s ease;
+}
+
+.name:hover .leigh {
+    color: white;
 }
 
 @media only screen and (min-width: 25em) {
@@ -88,25 +102,18 @@ body {
     
     .jesso {
         float: left;
-        font-size: 4rem;
-        font-family: 'Megrim', sans-serif;
-        text-transform: uppercase;
+        font-size: 4.5rem;
     }
 
     .leigh {
         float: right;
-        font-size: 4rem;
-        font-family: 'Megrim', sans-serif;
-        text-transform: uppercase;
+        font-size: 4.5rem;
     }
     
     .logo {
-        position: absolute;
         width: 13rem;
-        top: 4.3rem;
-        bottom: 3rem;
+        top: 2rem;
         left: calc(50% - 6.5rem);
-        animation: rotate 10s infinite alternate;
     }
     
     .name {
@@ -119,4 +126,14 @@ body {
 }
 
 @media only screen and (min-width: 60em) {
+    
+    .jesso {
+        float: left;
+        font-size: 6rem;
+    }
+
+    .leigh {
+        float: right;
+        font-size: 6rem;
+    }
 }
