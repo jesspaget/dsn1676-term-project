@@ -42,16 +42,16 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     overflow: hidden;
-    padding: 2em;
+    padding: 4em;
     margin: 0;
 }
 
 .logo {
     position: absolute;
-    width: 13rem;
-    top: 4.3rem;
+    width: 10rem;
+    top: 3rem;
     bottom: 3rem;
-    left: calc(50% - 6.5rem);
+    left: calc(50% - 5rem);
     animation: rotate 10s infinite alternate;
 }
 
@@ -68,15 +68,55 @@ body {
 }
 
 .jesso {
-    float: left;
-    font-size: 4rem;
     font-family: 'Megrim', sans-serif;
     text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+    
+.leigh {
+    font-family: 'Megrim', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
 }
 
-.leigh {
-    float: right;
-    font-size: 4rem;
-    font-family: 'Megrim', sans-serif;
-    text-transform: uppercase;
+@media only screen and (min-width: 25em) {
+}
+
+@media only screen and (min-width: 38em) {
+    
+    .jesso {
+        float: left;
+        font-size: 4rem;
+        font-family: 'Megrim', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .leigh {
+        float: right;
+        font-size: 4rem;
+        font-family: 'Megrim', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .logo {
+        position: absolute;
+        width: 13rem;
+        top: 4.3rem;
+        bottom: 3rem;
+        left: calc(50% - 6.5rem);
+        animation: rotate 10s infinite alternate;
+    }
+    
+    .name {
+        background-color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        overflow: hidden;
+        padding: 2em;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 60em) {
 }
