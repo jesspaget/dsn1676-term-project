@@ -24,6 +24,8 @@ body {
     list-style-type: none;
     background-color: white;
     display: none;
+    text-transform: uppercase;
+    font-family: 'Megrim', sans-serif;
 }
 
 .nav a {
@@ -225,4 +227,13 @@ body {
         float: right;
         font-size: 6rem;
     }
+}
+
+.tabs li {
+    display: inline-block;
+    text-align: center;
+}
+
+[hidden] {
+    display: none;
 }
