@@ -252,3 +252,14 @@ body {
     color: white;
     padding: .5rem;
 }
+
+.artimgs {
+    width: 11rem;
+    border: 5px solid black;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.tab-panels {
+    text-align: center;
+}
