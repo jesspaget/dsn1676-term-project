@@ -243,4 +243,12 @@ body {
     font-family: 'Megrim', sans-serif;
     text-align: center;
     color: #B97922;
+    font-size: 1.8rem;
+    margin: .5em;
+}
+
+.tab-name:hover {
+    background-color: black;
+    color: white;
+    padding: .5rem;
 }
