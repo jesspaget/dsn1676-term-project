@@ -237,3 +237,10 @@ body {
 [hidden] {
     display: none;
 }
+
+.tab-name {
+    text-decoration: none;
+    font-family: 'Megrim', sans-serif;
+    text-align: center;
+    color: #B97922;
+}
