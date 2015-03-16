@@ -18,61 +18,6 @@ body {
     overflow: hidden;
 }
 
-.nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    background-color: white;
-    display: none;
-}
-
-.nav a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 0.5em;
-}
-
-.nav a:hover {
-    color: white;
-    background-color: #B97922;
-}
-
-.nav-check {
-    position: absolute;
-    top: -3em;
-}
-
-.nav-check:checked ~ .nav {
-    display: block;
-}
-
-.nav-label {
-    cursor: pointer;
-    font-size: 1.50rem;
-    display: inline-block;
-    width: 40px;
-}
-
-.nav-open,
-.nav-close {
-    display: block;
-    width: 100%;
-    margin: .5rem;
-}
-
-.nav-close {
-    display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-open {
-    display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-    display: block;
-}
-
 .bannerimg {
     position: absolute;
     top: 0;
@@ -130,7 +75,7 @@ body {
 .logo {
     position: absolute;
     width: 10rem;
-    top: 3rem;
+    top: 3.15rem;
     bottom: 3rem;
     left: calc(50% - 5rem);
     -webkit-animation: rotate 10s linear infinite;
