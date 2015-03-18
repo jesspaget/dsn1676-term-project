@@ -15,7 +15,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .nav {
@@ -23,11 +22,16 @@ body {
     padding: 0;
     list-style-type: none;
     background-color: white;
-    display: none;
+    max-height: 0;
     text-transform: uppercase;
     font-family: 'Megrim', sans-serif;
-    text-align: left;
     text-align: center;
+    overflow: hidden;
+    
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    -moz-transition: all 1000ms linear;
+    transition: all 1000ms linear;
 }
 
 .nav a {
@@ -48,7 +52,7 @@ body {
 }
 
 .nav-check:checked ~ .nav {
-    display: block;
+    max-height: 5em;
 }
 
 .nav-label {
@@ -215,17 +219,19 @@ body {
     text-align: center;
     color: #B97922;
     font-size: 1.8rem;
-    margin: .5em;
+    font-size: 2rem;
+    padding: .5rem;
+    width: 100%;
+    display: block;
 }
 
 .tab-name:hover {
     background-color: black;
     color: white;
-    padding: .5rem;
 }
 
 .artimgs {
-    width: 11rem;
+    width: 15rem;
     border: 5px solid black;
     display: inline-block;
     margin: 0 auto;
@@ -236,7 +242,7 @@ body {
 }
 
 .nav-open {
-    width: 35px;
+    width: 25px;
 }
 
 .nav-close {
@@ -244,47 +250,67 @@ body {
 }
 
 @media only screen and (min-width: 25em) {
+    
+    .tab-name {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 38em) {
     
+    
     .jesso {
-        float: left;
-        font-size: 5rem;
-        margin: 0 3rem;
+        font-size: 7rem;
     }
 
     .leigh {
-        float: right;
-        font-size: 5rem;
-        margin: 0 3rem;
+        font-size: 7rem;
     }
     
     .logo {
-        width: 13rem;
+        width: 11rem;
         top: 2rem;
-        left: calc(50% - 6.5rem);
+        left: calc(50% - 5.5rem);
+    } 
+    
+    .artimgs {
+        width: 13rem;
+    }
+    
+    .nav {
+        font-size: 1.5rem;
+    }
+    
+    .tab-name {
+        font-size: 2.5rem;
     }
 }
 
 @media only screen and (min-width: 60em) {
     
     .logo {
-        width: 25rem;
-        top: -1rem;
-        left: calc(50% - 12.5rem);
+        width: 13rem;
+        top: .4rem;
+        left: calc(50% - 6.5rem);
     }
     
-    .jesso {
-        float: left;
-        font-size: 8rem;
-        left: 50%;
-        
+    .jesso {    
+        font-size: 10rem;
     }
 
     .leigh {
-        float: right;
-        font-size: 8rem;
-        right: 50%;
+        font-size: 10rem;
+    } 
+    
+    .tab-name {
+        font-size: 3rem;
+    }
+    
+    .artimgs {
+        width: 19rem;
+    }
+    
+    .nav {
+        font-size: 2rem;
     }
 }
