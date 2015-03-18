@@ -28,10 +28,10 @@ body {
     text-align: center;
     overflow: hidden;
     
-    -webkit-transition: all 1000ms linear;
-    -o-transition: all 1000ms linear;
-    -moz-transition: all 1000ms linear;
-    transition: all 1000ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    transition: all 500ms linear;
 }
 
 .nav a {
@@ -231,14 +231,20 @@ body {
 }
 
 .artimgs {
-    width: 15rem;
     border: 5px solid black;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
+    position: absolute;
+    width: 100%
 }
 
 .tab-panels {
     text-align: center;
+    position: relative;
+}
+
+.tab-panels img {
+    width: 100%;
 }
 
 .nav-open {
@@ -247,6 +253,20 @@ body {
 
 .nav-close {
     width: 25px;
+}
+
+.artimg1,
+.artimg2,
+.artimg3 {
+    left: 0;
+    position: absolute;
+    top: 50px;
+    transition: all 200ms linear;
+    opacity: 0;
+}
+
+.js-toggle-show {
+    opacity: 1;
 }
 
 @media only screen and (min-width: 25em) {
