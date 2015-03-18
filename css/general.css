@@ -235,7 +235,6 @@ body {
     display: block;
     margin: 0 auto;
     position: absolute;
-    width: 100%
 }
 
 .tab-panels {
@@ -244,7 +243,10 @@ body {
 }
 
 .tab-panels img {
-    width: 100%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    top: 1rem;
 }
 
 .nav-open {
