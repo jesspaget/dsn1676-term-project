@@ -286,6 +286,12 @@ body {
     font-family: 'Megrim', sans-serif;
 }
 
+.backtotop {
+    max-width: 7rem;
+    display: block;
+    margin: 0 auto;
+}
+
 @media only screen and (min-width: 25em) {
     
     .tab-name {

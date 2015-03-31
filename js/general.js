@@ -26,3 +26,5 @@ $btnShowThreeHide.on('click', function () {
 });
 
 $('.nav').localScroll();
+
+$('.backtotop').localScroll();
