@@ -351,4 +351,10 @@ body {
     .nav {
         font-size: 2rem;
     }
+    
+    .about {
+        margin: 2rem;
+        font-size: 1.6rem;
+        padding-top: 40rem;
+    }
 }

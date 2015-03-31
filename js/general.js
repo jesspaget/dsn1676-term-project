@@ -25,3 +25,4 @@ $btnShowThreeHide.on('click', function () {
     $artShowThree.toggleClass('js-toggle-show');
 });
 
+$('.nav').localScroll();
