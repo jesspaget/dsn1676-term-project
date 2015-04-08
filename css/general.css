@@ -151,8 +151,73 @@ body {
 }
 
 .contactsvg {
-    max-width: 2rem;
-    max-height: 3rem;
+    max-width: 3rem;
+}
+
+#top {
+    animation: top-move 1s linear infinite;
+}
+
+@keyframes top-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#arc {
+    animation: arc-move 1s linear infinite;
+}
+
+@keyframes arc-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+#roof {
+    animation: roof-move 1s linear infinite;
+}
+
+@keyframes roof-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
 }
 
 @-webkit-keyframes rotate {
