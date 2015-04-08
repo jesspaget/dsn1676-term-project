@@ -150,6 +150,11 @@ body {
     animation: rotate 10s linear infinite;
 }
 
+.contactsvg {
+    max-width: 2rem;
+    max-height: 3rem;
+}
+
 @-webkit-keyframes rotate {
         
     0% {
