@@ -7,6 +7,8 @@ var $btnShowTwoHide = $('.secbutton');
 var $artShowThree = $('.artimg3');
 var $btnShowThreeHide = $('.trdbutton');
 
+var $contactSection = $('.contact');
+
 $btnShowOneHide.on('click', function () {
     $artShowTwo.removeClass('js-toggle-show');
     $artShowThree.removeClass('js-toggle-show');
@@ -28,3 +30,7 @@ $btnShowThreeHide.on('click', function () {
 $('.nav').localScroll();
 
 $('.backtotop').localScroll();
+
+$contactSection.waypoint(function () {
+    $contactSection.toggleClass('js-active');
+}, {offset: '65%'});
