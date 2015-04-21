@@ -147,6 +147,8 @@ body {
     bottom: 3rem;
     left: calc(50% - 5rem);
     -webkit-animation: rotate 10s linear infinite;
+    -o-animation: rotate 10s linear infinite;
+    -moz-animation: rotate 10s linear infinite;
     animation: rotate 10s linear infinite;
 }
 
@@ -159,6 +161,30 @@ body {
     100% {
         transform: rotate(360deg)
     }
+}
+
+@-o-keyframes rotate {
+        
+    0% {
+        transform: rotate(0deg)
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+    
+}
+
+@-moz-keyframes rotate {
+        
+    0% {
+        transform: rotate(0deg)
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+    
 }
 
 @keyframes rotate {
@@ -190,7 +216,64 @@ body {
 }
 
 .js-active #top {
+    -webkit-animation: top-move 1s linear infinite;
+    -o-animation: top-move 1s linear infinite;
+    -moz-animation: top-move 1s linear infinite;
     animation: top-move 1s linear infinite;
+}
+
+@-webkit-keyframes top-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-o-keyframes top-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-moz-keyframes top-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
 }
 
 @keyframes top-move {
@@ -212,7 +295,26 @@ body {
 }
 
 .js-active #arc {
+    -webkit-animation: arc-move 1s linear infinite;
     animation: arc-move 1s linear infinite;
+}
+
+@-webkit-@keyframes arc-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
 }
 
 @keyframes arc-move {
@@ -234,7 +336,26 @@ body {
 }
 
 .js-active #roof {
+    -webkit-animation: roof-move 1s linear infinite;
     animation: roof-move 1s linear infinite;
+}
+
+@-webkit-@keyframes roof-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
 }
 
 @keyframes roof-move {
