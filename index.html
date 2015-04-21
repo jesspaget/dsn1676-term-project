@@ -2,7 +2,7 @@
 <html lang="en-ca">
     
 <head>
-    <nav class="nav-top">
+    <nav class="nav-top" role="navigation" id="nav">
         <input type="checkbox" class="nav-check" id="nav-check">
         <label class="nav-label" for="nav-check">
             <img class="nav-open" src="images/ham-toggle.svg" alt="Open Navigation">
@@ -26,14 +26,22 @@
     
 <body>
     
-<div class="banner">
+<ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#banner">Skip to banner</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+    <li><a href="#contact">Skip to contact info</a></li>
+    <li><a href="#footer">Skip to footer</a></li>
+</ul>
+    
+<div class="banner" role="banner" id="banner">
     <div class="bannerimg"></div>
     <h1 class="name"><span class="jesso">Jesso</span> <span class="leigh">Leigh</span></h1>
     <img src="images/logo.svg" class="logo">
 </div>
     
 <ul class="tabs">
-    <div class="grid" id="myart">
+    <div class="grid" id="myart" role="main" id="main">
         <div class="unit unit-xs-1 unit-s-1-3 unit-m-1-3 l-1-3 tabs-li">
             <li><a href="#tab-1" class="tab-name firstbutton">Mandalas</a></li>
         </div>
@@ -73,7 +81,7 @@ I am enjoying every little bit of the design program at Algonquin College and ca
     
      <hr id="aboutme" class="divider">
     
-    <div class="grid contact" id="contactme">
+    <div class="grid contact" id="contactme" role="complementary" id="contact">
         <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 294.6" class="contactsvg">
                 <g id="top">
@@ -124,6 +132,9 @@ I am enjoying every little bit of the design program at Algonquin College and ca
              <img src="images/backtotop.svg" class="backtt">
         </a>
     </div>
+    
+    <footer role="contentinfo" id="footer">
+    </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script></script>

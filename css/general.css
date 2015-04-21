@@ -17,6 +17,10 @@ body {
     padding: 0;
 }
 
+a:focus {
+    outline: 3px solid black;
+}
+
 .nav {
     margin: 0;
     padding: 0;
@@ -296,10 +300,48 @@ body {
 
 .js-active #arc {
     -webkit-animation: arc-move 1s linear infinite;
+    -o-animation: arc-move 1s linear infinite;
+    -moz-animation: arc-move 1s linear infinite;
     animation: arc-move 1s linear infinite;
 }
 
-@-webkit-@keyframes arc-move {
+@-webkit-keyframes arc-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-o-keyframes arc-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-moz-keyframes arc-move {
     0% {
         transform: translateY(0);
     }
@@ -340,7 +382,43 @@ body {
     animation: roof-move 1s linear infinite;
 }
 
-@-webkit-@keyframes roof-move {
+@-webkit-keyframes roof-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-o-keyframes roof-move {
+    0% {
+        transform: translateY(0);
+    }
+    
+    30% {
+        transform: translateY(10px);
+    }
+    
+    80% {
+        transform: translateY(-10px)
+    }
+    
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-moz-keyframes roof-move {
     0% {
         transform: translateY(0);
     }
